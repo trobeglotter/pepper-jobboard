@@ -7,7 +7,8 @@ const json = require('express');
 const cookieParser = require('cookie-parser');
 var url = require('url');
 
-const pool = require('../database.js')
+// const pool = require('../database.js')
+const pool = DATABASE_URL;
 const postIdFunction = require('../postIdFunction');
 const bcrypt = require('bcrypt');
 const saltRounds = 13;
