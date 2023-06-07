@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
 const app = express();
-const port = 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -20,6 +19,11 @@ app.get('/', (req, res) => {
 const router = require('./routes/routeUserPosts');
 
 app.use(router);
+
+let port = process.env.PORT || 8080;
+// if (port == null || port == "") {
+//     let port = 8080;
+// }
 
 app.listen(port);
 
