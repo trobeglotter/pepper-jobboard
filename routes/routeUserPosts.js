@@ -8,7 +8,9 @@ const cookieParser = require('cookie-parser');
 var url = require('url');
 
 // const pool = require('../database.js')
-const pool = process.env.DATABASE_URL;
+const pool = require('process.env.DATABASE_URL')
+
+// const pool = process.env.DATABASE_URL;
 const postIdFunction = require('../postIdFunction');
 const bcrypt = require('bcrypt');
 const saltRounds = 13;
