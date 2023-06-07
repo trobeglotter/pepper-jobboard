@@ -4,7 +4,7 @@
   "description": "Jobboard CRUD app with pagination, postgres, and neumorphism styling",
   "main": "index.js",
   "scripts": {
-    "devStart": "node server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
